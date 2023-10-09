@@ -13,6 +13,10 @@
   }
 }
 
+@media (max-width: 768px) {
+  descriptionStyle.paddingLeft = '20px'; // Adjust padding for smaller screens
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +39,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+.mp{
+  border:0; 
+  width: 100%; 
+  height: 270px;
 }

@@ -1,0 +1,74 @@
+.txtstle
+{
+    font-size:"10px";
+}
+body {
+  background-image: url('c:\reactapi\myreactapi\src\imgs\8.jpg');
+  background-size: cover;
+  background-attachment: fixed; /* To make the background image fixed */
+  position: relative;
+  margin: 0; /* Remove default margin to ensure full coverage */
+  padding: 0; /* Remove default padding */
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background:transparent;
+    background-size: cover;
+    border-color:  black;
+    backdrop-filter: blur(5px); 
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: whi  ;
+  }
+  .blur{
+    backdrop-filter: blur(15px); 
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background: transparent;
+    border-color: black;
+  }
+  
+  button {
+    background-color: #08a8ad;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background:  #03e9f4; 
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4,
+                  
+  }
+  

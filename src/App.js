@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./home";
+import Gallery from "./gallery";
+import AboutPage from './about';
+import ContactPage from './contact';
+import Loginpage from './login';
+import Register from './register';
+import Viewdata from './viewdata';
+import Editdata from './edit';
+import Delete from './delete';
 
-function App() {
+
+
+const App = () => {    //or function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   <BrowserRouter>
+    <Routes>
+    
+   {/*  <Route index element={<HomePage />} /> */}
+    <Route path='home' element={<HomePage />} />
+    <Route path='gallery' element={<Gallery />} />
+    <Route path='about' element={<AboutPage />} />
+    <Route path='contact' element={<ContactPage />} />
+    <Route path='login' element={<Loginpage />}/>
+    <Route path='register' element={<Register />}/>
+    <Route path='viewdata' element={<Viewdata />}/>
+    <Route path='edit' element={<Editdata />}/>
+    <Route path='delete' element={<Delete />}/>
+    
+    </Routes>
+   </BrowserRouter>
+  )
 }
-
-export default App;
+export default App
